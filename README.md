@@ -17,11 +17,11 @@ git clone username@host:/path/to/repository
 git add * 
 git commit -m 
 
-git remote add origin https://github.com/username/Hello-World.git
-# Creates a remote named "origin" pointing at your GitHub repository
+git remote add origin https://github.com/username/Hello-World.git // # Creates a remote named "origin" pointing at your GitHub repository
 
-git push origin master
-# Sends your commits in the "master" branch to GitHub
+
+git push origin master //# Sends your commits in the "master" branch to GitHub
+
 
 git remote add origin <server>
 git push origin master  // where master is branch name 
