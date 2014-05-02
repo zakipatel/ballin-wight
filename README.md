@@ -18,9 +18,9 @@ Many things
 
 Links: http://rogerdudler.github.io/git-guide/
 
-1.Create repo in github
-2. cd working/directory
-3. git init 
+1.Create repo in github <br>
+2. cd working/directory <br>
+3. git init <br>
 4. git remote add origin https://github.com/username/Hello-World.git // # Creates a remote named 
 5. git add * 
 6. git commit -m 
