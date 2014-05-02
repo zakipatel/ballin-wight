@@ -60,7 +60,8 @@ body{
 .header{
 	background: #eda800;
 	width: 100%;
-	position: fixed;
+	/*position: fixed;*/
+	opacity: 0.5;
 }
 
 
@@ -73,13 +74,14 @@ body{
 .cssmenu{
 	float:right;
 	padding-top: 6px;
+	/*position: relative;*/
 }
 .cssmenu ul li {
 	display: inline-block;
-
 }
+
 .cssmenu ul li a {
-	color: white;
+	color: #8a443b;
 	/*color: #8a443b;*/
 	display: block;
 	padding: 10px 15px;
@@ -90,8 +92,9 @@ body{
 	text-transform: none;
 	margin: 13px 10px;
 }
+
 .cssmenu li.active> a, .cssmenu li> a:hover {
-	color:#8a443b;
+	color:white;
 	/*background:#8a443b;;*/
 	/*#ffea00;*/
 	-webkit-transition: all 0.3s ease;
@@ -102,7 +105,7 @@ body{
 /**** Slider *****/
 .index-banner{
 	background:url(../images/t1.png)no-repeat;
-	padding:10px 0;
+	padding:0px 0;
 
 }
 
@@ -193,7 +196,7 @@ body{
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
 	font-family: 'Crimson Text', serif;
-	font-size:1.3em;
+	font-size:0.8em;
 
 }
 
@@ -291,25 +294,26 @@ p.bottom{
 .wmuSliderPagination {
 	z-index: 2;
 	position: absolute;
-	left:50%;
-	bottom: 10px;
+	left:44.5%;
+	bottom: 45%;
 }
 .wmuSliderPagination li {
 	float: left;
-	margin: 0 2px 0 0;
+	margin: 0 5px 0 0;
 	list-style-type: none;
 }
 .wmuSliderPagination a {
 	display: block;
 	text-indent: -9999px;
-	width:24px;
-	height:24px;
-	/*background: url(../images/img-sprite.png)no-repeat -126px -15px;*/*/
-	background: none; 
+	width:20px;
+	height:20px;
+	/*background: url(../images/img-sprite.png)no-repeat -126px -15px;*/
+	background: white;
 }
 .wmuSliderPagination a.wmuActive {
-	/*background: url(../images/img-sprite.png)no-repeat -156px -15px;*/*/
-	background: none;
+	/*background: url(../images/img-sprite.png)no-repeat -156px -15px;*/
+	background: orange; 
+	opacity: 0.5;
 }
 /*--content--*/
 .main{
@@ -318,6 +322,42 @@ p.bottom{
 .content-top{
 	padding:5% 0;
 }
+
+/*--content-middle--*/
+.content-middle{
+	padding-bottom:3%;
+}
+
+.content-middle h2{
+	font-size: 1.2em;
+	text-transform: uppercase;
+	text-align: center;
+	background:url(../images/bg-h2.png) repeat-x center;
+	margin-bottom:40px;
+}
+
+.content-middle h2 span{
+	background:#eda800;
+	color:#8a443b;
+	padding:5px 40px;
+	/*font-family: 'Ubuntu', Arial, serif;*/
+	font-family: 'Crimson Text', serif;
+	
+}
+
+.content-middle h4{
+	text-align:center;
+	font-size:2em;
+	color:#8a443b;
+	font-weight:300;
+	font-family: 'Crimson Text', serif;
+	text-transform: none;
+	margin-bottom:15px;
+}
+
+
+
+
 .content-top h3{
 	text-align:center;
 	font-size:2.5em;
@@ -338,19 +378,40 @@ p.bottom{
 	margin-bottom:15px;
 }
 
-.content-top h5{
+.content-middle h5{
 	text-align:center;
-	font-size:1.5em;
+	font-size:1.2em;
 	color: #8a443b;
 	font-weight:600;
-	font-family: "Oxygen";
-	margin-bottom:60px;
+	font-family: 'Crimson Text', serif;
+	margin-bottom:10px;
 }
+
+.cont-about p{
+	text-align:center;
+	color:grey;
+	font-size: 10em;
+	padding:1% 0;
+	font-family: 'Crimson Text', serif;
+	padding-left:200px;
+	width: 70%;
+}
+
+.content-middle p{
+	text-align:center;
+	color:grey;
+	font-size: 1em;
+	padding:1% 0;
+	font-family: 'Crimson Text', serif;
+	padding-left:14px;
+	/*width: 70%;*/
+}
+
 .col_1_of_4{
 	display: block;
 	float:left;
 	margin:0% 0 0% 3.6%;
-	background: white;
+	background: none;
 	cursor:pointer;
 }
 .span_1_of_4:hover {
@@ -377,8 +438,8 @@ p.bottom{
 	line-height: 1.5em;
 }
 .desc{
-	background: #eda800;
-	padding: 20px;
+	background: none;
+	padding: 0px;
 }
 .desc h4{
 	color: #EEE;
@@ -398,45 +459,23 @@ span.small{
 	padding: 26px 0px 10px 0px;
 }
 .grid1 img{
-	padding: 23px 0;
+	padding: 0px 0;
+	width: 25%;
+	height: 25%;
 }
 .grid1 h4{
 	color:#5C5401;
 	text-transform:uppercase;
 	font-size:1.5em;
+	line-height: 1.2em;
 }
 .desc p{
-	color: #FFF;
-	font-size: 0.8999em;
+	color: grey;
+	font-size: 1.1em;
 	line-height: 1.8em;
-	text-align: center;
-}
-/*--content-middle--*/
-.content-middle{
-	padding-bottom:3%;
-}
-.content-middle h2{
-	font-size: 1.5em;
-	text-transform: uppercase;
-	text-align: center;
-	background:url(../images/bg-h2.png) repeat-x center;
-	margin-bottom:40px;
+	text-align: left;
 }
 
-.content-middle h2 span{
-	background:#eda800;
-	color:#8a443b;
-	padding:5px 40px;
-	font-family: 'Ubuntu', Arial, serif;
-}
-.content-middle p{
-	text-align:center;
-	color:white;
-	font-size: 1.4em;
-	padding:1% 0;
-		font-family: 'Ubuntu', Arial, serif;
-
-}
 
 #tiles {
   list-style-type: none;
@@ -615,12 +654,13 @@ span.small{
 	letter-spacing: -1px;
 }
 .span_1_of_3  p  {
-	font-size:1.2em;
+	font-size:1em;
 	color: #5C5401;
 	line-height: 1.5em;
 	text-align: left;
-	font-family: 'Ubuntu', Arial, serif; 
-}
+	margin-left: 10px;
+	font-family: 'Crimson Text', serif;
+}	
 /***** Media Quries *****/
 @media only screen and (max-width: 1024px) {
 	.wrap{
