@@ -28,10 +28,24 @@ nav.vertical ul li{	display:block;}/* vertical menu */
 nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
 img{max-width:100%;}
 /*end reset*/
+
 body{
-	font-family: "Oxygen", 'sans-serif';
-	background:#fff;
+	/*font-family: 'Ubuntu', Arial, serif;*/
+	font-family: 'Crimson Text', serif;
+	background:white;
 }
+
+.transbox
+  {
+  width:400px;
+  height:180px;
+  margin:-25px 0px;
+  background-color:  rgba(255,0,0,0.4);
+  /*border:1px solid black;*/
+  opacity:0.5;
+  filter:alpha(opacity=30); /* For IE8 and earlier */
+  }
+
 .wrap{
 	width:80%;
 	margin:0 auto;
@@ -39,24 +53,22 @@ body{
 	-webkit-transition:all .2s linear; 
 	-o-transition:all .2s linear; 
 	-ms-transition:all .2s linear;
-	font-family: "Oxygen";
+	font-family: 'Crimson Text', serif;
+	/*font-family: 'Ubuntu', Arial, serif;*/
 }
 
 .header{
-	/*background: #f6f6f6;*/
 	background: #eda800;
-	/*position: fixed;*/
-    /*top: 0px;*/
-    /*height: 20px;*/
-    width: 100%;
-    /*background: green;*/
-	}
+	width: 100%;
+	position: fixed;
+}
 
 
 .logo {
 	float:left;
 	padding-top: 2px;
 }
+
 /*--menu--*/
 .cssmenu{
 	float:right;
@@ -67,18 +79,19 @@ body{
 
 }
 .cssmenu ul li a {
-	/*color: #000;*/
-	color: #8a443b;
+	color: white;
+	/*color: #8a443b;*/
 	display: block;
 	padding: 10px 15px;
 	letter-spacing: 1px;
 	font-size: 1.1em;
-	font-family: 'Ubuntu', Arial, serif;
-	text-transform: uppercase;
+	/*font-family: 'Ubuntu', Arial, serif;*/
+	font-family: 'Crimson Text', serif;
+	text-transform: none;
 	margin: 13px 10px;
 }
 .cssmenu li.active> a, .cssmenu li> a:hover {
-	color:white;;
+	color:#8a443b;
 	/*background:#8a443b;;*/
 	/*#ffea00;*/
 	-webkit-transition: all 0.3s ease;
@@ -88,7 +101,7 @@ body{
 }
 /**** Slider *****/
 .index-banner{
-	background:url(../images/banner.jpg)no-repeat;
+	background:url(../images/t1.png)no-repeat;
 	padding:10px 0;
 
 }
@@ -101,7 +114,7 @@ body{
 .wmuSlider {
 	position: relative;
 	overflow: hidden;
-	padding-bottom: 50px;
+	padding-bottom: 100px;
 }
 .wmuSlider .wmuSliderWrapper article {
 	position: relative;
@@ -167,24 +180,29 @@ body{
 	margin:30px 0;
 	border: none;
 	font-family: inherit;
-	color:#fff;
+	color:#8a443b;
 	background: none;
 	cursor: pointer;
 	padding:8px 20px;
 	display: inline-block;
-	border-bottom: 3px solid #ffea00;
+	border-bottom: 3px solid #eda800;
 	letter-spacing: 1px;
 	outline: none;
 	position: relative;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
+	font-family: 'Crimson Text', serif;
+	font-size:1.3em;
+
 }
+
 .btn-8 {
 	display: block;
 	background: #000;
 	font-size:0.99em;
-	font-family: "Oxygen",Arial, Helvetica, sans-serif;
+	font-family: 'Crimson Text', serif;
+	/*font-family: "Oxygen",Arial, Helvetica, sans-serif;*/
 	-webkit-transform-style: preserve-3d;
 	-moz-transform-style: preserve-3d;
 	transform-style: preserve-3d;
@@ -195,10 +213,14 @@ body{
 .btn-8 a{
 	color: #fff;
 }
+
+
 .slider-left{
 	float: left;
 	padding-top:6%;
-	width: 47.5%;
+	width: 49%;
+	/*background: white; */
+	
 }
 .slider-left h3{
 	font-size:4em;
@@ -228,18 +250,20 @@ body{
 	float:left;
 }
 
-/*red*/
-
 p.top{
-	color:#eda800;
-	font-size:2em;
-	line-height:1.5em;
+	margin:125px 70px;
+    font-weight:bold;
+    color:black;
+	font-size:1.40em;
+	line-height:1.1em;
 	font-family: 'Ubuntu', Arial, serif;
-	background:#8a443b;
+	/*background:white;*/
 	text-align:center;
-	padding:100px 10px;
-	width:90%;
-	margin-bottom:1px;
+	padding:0px 0px;
+	width:100%;
+	margin-bottom:10px;
+	/*opacity: 0.8;*/
+	font-family: 'Crimson Text', serif;
 }
 
 p.middle{
@@ -253,12 +277,13 @@ p.middle{
 	width:64%;
 	margin-bottom:1px;
 }
+
 p.bottom{
-	color:#fff;
-	font-size:1.7em;
-	line-height:1.5em;
+	color:#414146;
+	font-size:1.1em;
+	line-height:1.em;
 	font-family: 'Ubuntu', Arial, serif;
-	background:#414146;
+	/*background:#414146;*/
 	text-align:left;
 	padding:0px 10px;
 	width:95%;
@@ -279,11 +304,11 @@ p.bottom{
 	text-indent: -9999px;
 	width:24px;
 	height:24px;
-	/*background: url(../images/img-sprite.png)no-repeat -126px -15px;*/
+	/*background: url(../images/img-sprite.png)no-repeat -126px -15px;*/*/
 	background: none; 
 }
 .wmuSliderPagination a.wmuActive {
-	/*background: url(../images/img-sprite.png)no-repeat -156px -15px;*/
+	/*background: url(../images/img-sprite.png)no-repeat -156px -15px;*/*/
 	background: none;
 }
 /*--content--*/
@@ -834,7 +859,7 @@ p.copy a:hover{
 }
 /*--portfolio--*/
 .banner{
-	background:url(../images/banner.jpg)no-repeat;
+	background:url(../images/t1.png)no-repeat;
 	padding:50px 0;
 }
 .banner h2{
